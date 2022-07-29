@@ -118,7 +118,8 @@ i:hover{
 @media  screen and (max-width: 760px) {
         .col p {
         display: none;
-    }
+    }; 
+}
 
 @media screen and (min-width: 760px) {
     /* search-bar  */
@@ -136,5 +137,6 @@ i:hover{
 }
 #validate {
     display: block;
-}
+    }
+
 }

@@ -1,6 +1,68 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-size: 2em;
+    margin-left: 50px;
+}
 header {
+    height: 400px;
+    /* display: flex; */
+    text-align: center;
+    background-image: url(./assets/images/background.jpg);
+    background-position: border-box;
+    color: white;
+}
+header h2 {
+    font-size: 0.8em;
+}
 
+header .container {
+    margin-bottom: 80px;
+}
+
+.nav-bar{
+    height: 50px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+.navbar {
+    float: right;
+}
+select {
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 1àpx;
+}
+
+#search {
+    background-color: rgba(255, 255, 255, 0.7); 
+    height: 170px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+#search .dropdown{
+    width: 100%;
+}
+
+#search input {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+}
+#validate {
+    background-color: rgba(41,181,37,0.7);
+    width: 100%;
+}
+
+.search-box{
+    padding: 5px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

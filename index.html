@@ -17,11 +17,39 @@
 
 <body>
     <header>
+        <!-- Burger btn trouver le fonctionnement  -->
+        <div class="nav-bar">
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <!-- Titre + sous titre -->
         <div class="container">
             <h1>Bienvenue à bord</h1>
-            <p>Location de voiture 24h/24 et 7J/7</p>
+            <h2>Location de voiture 24h/24 et 7J/7</h2>
+        </div>
+        <!-- Div de recherche  -->
+        <div id="search">
+            <div class="search-box">
+                <select name="start" id="start-select">
+                    <option value=""> Adresse de départ</option>
+                    <option value="dog">Maison</option>
+                    <option value="cat">Travail</option>
+                    <option value="hamster">Chez ton Ex</option>
+                </select>
+                <input type="date" placeholder="Début de la location">
+                <input type="date">
+            </div>
+
+            <a id="validate">Valider ma recherce</a>
+
         </div>
     </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

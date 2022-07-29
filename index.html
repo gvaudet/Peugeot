@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -34,20 +37,16 @@
                 <h2>Location de voiture 24h/24 et 7J/7</h2>
             </div>
             <!-- Div de recherche  -->
-            <div id="search">
-                <div class="search-box">
-                    <select name="start" id="start-select">
-                        <option value=""> Adresse de départ</option>
-                        <option value="dog">Maison</option>
-                        <option value="cat">Travail</option>
-                        <option value="hamster">Chez ton Ex</option>
-                    </select>
-                    <input type="text" placeholder='Début de location'>
-                    <input type="text" placeholder='Fin de la location'>
-                </div>
-
+            <div class="search-grid-container" id="search">
+                <select name="start" id="start-select">
+                    <option value=""> Adresse de départ</option>
+                    <option value="dog">Maison</option>
+                    <option value="cat">Travail</option>
+                    <option value="hamster">Chez ton Ex</option>
+                </select>
+                <input type="text" placeholder='Début de location'>
+                <input type="text" placeholder='Fin de la location'>
                 <a id="validate">Valider ma recherce</a>
-
             </div>
         </div>
     </header>
@@ -55,7 +54,7 @@
     <!-------         Grille d'affichage des véhicules ----------------->
     <div class="container cars-grid mt-3">
         <div class="container">
-            <div class="row justify-content-space-between px-2">
+            <div class="container row justify-content-space-between px-2">
                 <div class="col">
                     <h3>7 Résultats</h3>
                 </div>
@@ -64,15 +63,15 @@
                         <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Par Prix</button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-                            <a class="dropdown-item" href="#">Dropdown link</a>
-                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Prix croissant</a>
+                            <a class="dropdown-item" href="#">Prix décroissant</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col">
-                    <img class="cars-picture" src="./assets/images/vehicule1.png" alt="">
+                    <img class="cars-picture" src="./assets/images/vehicule1.png" alt="Peugeot 208">
                 </div>
                 <div class="col">
                     <h4>Peugeot 208</h4>
@@ -82,9 +81,9 @@
                 </div>
             </div>
             <div class="slice my-5 "></div>
-            <div class=" row">
+            <div class="row mt-3">
                 <div class="col">
-                    <img src="./assets/images/vehicule2.png" alt="">
+                    <img class="cars-picture" src="./assets/images/vehicule2.png" alt="Ford Focus">
                 </div>
                 <div class="col">
                     <h4>Peugeot 208</h4>
@@ -93,67 +92,57 @@
                     <button type="button" class="btn btn-success">Reserver et payer</button>
                 </div>
             </div>
-
-            <div class="slice my-5"></div>
-
-            <div class="row">
-                <div class="col">
-                    <img src="./assets/images/vehicule3.png" alt="">
-                </div>
-                <div class="col">
-                    <h4>Peugeot 208</h4>
-                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 100000km</p>
-                    <p>999€- Agence de Paris</p>
-                    <button type="button" class="btn btn-success">Reserver et payer</button>
-                </div>
-            </div>
-
-            <div class="slice my-5"></div>
-
-            <div class="row">
-                <div class="col">
-                    <img src="./assets/images/vehicule4.png" alt="">
-                </div>
-                <div class="col">
-                    <h4>Peugeot 208</h4>
-                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 100000km</p>
-                    <p>999€- Agence de Paris</p>
-                    <button type="button" class="btn btn-success">Reserver et payer</button>
-                </div>
-            </div>
-
         </div>
+
         <div class="slice my-5"></div>
 
-        <footer>
-            <div class="container grid-container">
-                <div>
-                    <img id="agency" src="./assets/images/agence.jpg" alt="">
-                </div>
-                <div>
-                    <a href="#">Notre agence de <span>Paris</span></a><br>
-                    <a href="#">300 Boulevard de Vaugirard, 75015, Paris</a><br>
-                    <a href="#">Ouvert 7J/7 de 09h à 13h et de 14h à 20h</a><br>
-                    <a href="#">0763872901</a><br>
-                    <a href="#">contact@gmail.com</a><br>
-                </div>
+        <div class="row mt-3">
+            <div class="col">
+                <img class="cars-picture" src="./assets/images/vehicule3.png" alt="audi Q3">
             </div>
+            <div class="col">
+                <h4>Peugeot 208</h4>
+                <p>Diesel, 5 portes, GPS, Autoradio, Forfait 100000km</p>
+                <p>999€- Agence de Paris</p>
+                <button type="button" class="btn btn-success">Reserver et payer</button>
+            </div>
+        </div>
 
+        <div class="slice my-5"></div>
 
-            <!-- <div class="container bg-dark" id="test">
-                <div class="row justify-content-center bg-light mx-auto" id="img">
-                    <img id="agency" class="col" src="./assets/images/agence.jpg" alt="">
-                    <div class="contact">
-                        <a href="#">Notre agence de <span>Paris</span></a><br>
-                        <a href="#">300 Boulevard de Vaugirard, 75015, Paris</a><br>
-                        <a href="#">Ouvert 7J/7 de 09h à 13h et de 14h à 20h</a><br>
-                        <a href="#">0763872901</a><br>
-                        <a href="#">contact@gmail.com</a><br>
-                    </div>
-                </div>
-            </div> -->
-        </footer>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <div class="row">
+            <div class="col">
+
+                <img src="./assets/images/vehicule4.png" alt="Opel">
+
+            </div>
+            <div class="col">
+                <h4>Peugeot 208</h4>
+                <p>Diesel, 5 portes, GPS, Autoradio, Forfait 100000km</p>
+                <p>999€- Agence de Paris</p>
+                <button type="button" class="btn btn-success">Reserver et payer</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="slice my-5"></div>
+
+    <footer>
+        <div class="container grid-container">
+            <div>
+                <img id="agency" src="./assets/images/agence.jpg" alt="">
+            </div>
+            <div class="contact">
+                <a href="#">Notre agence de <span>Paris</span></a><br>
+                <a href="#">300 Boulevard de Vaugirard, 75015, Paris</a><br>
+                <a href="#">Ouvert 7J/7 de 09h à 13h et de 14h à 20h</a><br>
+                <a href="#">0763872901</a><br>
+                <a href="#">contact@gmail.com</a><br>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

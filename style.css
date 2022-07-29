@@ -2,12 +2,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    font-size: 2em;
+    font-size: 3em;
     margin-left: 50px;
 }
 header {
-    height: 400px;
-    /* display: flex; */
+    height: 450px;
+    width: 100%;
     text-align: center;
     background-image: url(./assets/images/background.jpg);
     background-size: cover;
@@ -15,7 +15,7 @@ header {
     color: white;
 }
 header h2 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 header .container {
@@ -24,8 +24,6 @@ header .container {
 
 .nav-bar{
     height: 50px;
-    /* display: flex;
-    justify-content: flex-end; */
 }
 .navbar {
     float: right;
@@ -47,10 +45,6 @@ select {
     
 }
 
-#search .dropdown{
-    width: 100%;
-}
-
 #search input {
     width: 100%;
     border-radius: 3px;
@@ -64,13 +58,16 @@ select {
     cursor: pointer;
 }
 
-.search-box{
-    padding: 5px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+/* 
+.search-grid-container {
+    height: 200px;
+    display: grid;
+    grid-template-rows: 4fr;
+    text-align: center;
+} */
+
+
 
 /* ========================================== Partie Grid ============================================ */
 .btn-group{
@@ -86,6 +83,10 @@ select {
     background-color: rgba(221, 221, 221, 0.305);
 }
 
+i:hover{
+    cursor: pointer;
+}
+
 /* ========================================== Footer  ============================================ */
 
 #agency {
@@ -99,6 +100,10 @@ select {
     text-decoration: none;
 }
 
+.contact a:hover{
+    cursor: pointer;
+}
+
 .grid-container {
     height: 200px;
     max-width: 800px;
@@ -110,4 +115,26 @@ select {
 
 /* ========================================== Responsive  ============================================ */
 
+@media  screen and (max-width: 760px) {
+        .col p {
+        display: none;
+    }
 
+@media screen and (min-width: 760px) {
+    /* search-bar  */
+    #search{
+        height:51px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+#search input {
+    width: 30%;
+    border-radius: 3px;
+    border: none;
+}
+#validate {
+    display: block;
+}
+}
